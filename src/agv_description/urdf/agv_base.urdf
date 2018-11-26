@@ -48,22 +48,22 @@
 <link name="agv_link">
     <visual>
       <geometry>
-        <mesh filename="package://agv_description/meshes/agv_base/agv.STL"/>
+        <mesh filename="package://agv_description/meshes/agv_base/agv_center.STL"/>
       </geometry>
-      <material name="LightGrey">
-        <color rgba="0.7 0.7 0.9 1.0"/>
+      <material name="Blue">
+        <color rgba="0.5 0.5 0.8 1.0"/>
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://agv_description/meshes/agv_base/agv.STL"/>
+        <mesh filename="package://agv_description/meshes/agv_base/agv_center.STL"/>
       </geometry>
     </collision>
-    <inertial>
+    <!-- <inertial>
       <mass value="4.0"/>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <inertia ixx="0.0061063308908" ixy="0.0" ixz="0.0" iyy="0.0061063308908" iyz="0.0" izz="0.01125"/>
-    </inertial>
+    </inertial> -->
   </link>
 
 <joint name="world_charge_base_joint" type="fixed">
@@ -77,7 +77,7 @@
         <mesh filename="package://agv_description/meshes/agv_base/base.STL"/>
       </geometry>
       <material name="LightGrey">
-        <color rgba="0.7 0.7 0.7 0.2"/>
+        <color rgba="0.7 0.7 0.7 1.0"/>
       </material>
     </visual>
     <collision>
