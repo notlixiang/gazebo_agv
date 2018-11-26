@@ -5,5 +5,7 @@
     <!-- more default parameters can be changed here -->	
   </include>
 	<!-- Spawn a robot into Gazebo -->
-	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find baxter_description)/urdf/baxter.urdf -urdf -z 1 -model baxter" />
+	<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find agv_description)/urdf/agv.urdf -urdf -z 1 -model agv" />
+    <!--<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find baxter_description)/urdf/baxter.urdf -urdf -z 1 -model baxter" />-->
+
 </launch>
